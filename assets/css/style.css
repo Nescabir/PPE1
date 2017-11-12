@@ -143,6 +143,20 @@ article {
 	width: 77.4%;
 	text-align: center;
 }
+.img {
+	height: 250px;
+	transition:transform 0.25s ease;
+}
+.img:hover {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+}
+.one {
+	display: all;
+}
+.two {
+	display: none;
+}
 /* FIN CONTENT */
 
 /* FOOTER */
