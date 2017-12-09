@@ -143,6 +143,31 @@ article {
 	width: 77.4%;
 	text-align: center;
 }
+p a:link {
+	color: white;
+}
+p a:hover {
+	color: white;
+}
+p a:visited {
+	color: white;
+}
+.biographie {
+	clear: left;
+}
+.biographie p {
+	text-align: left;
+}
+.biographie .portrait{
+	float: left;
+	margin-right: 10px; 
+}
+.filmographie {
+	text-align: left;
+}
+.filmographie li {
+	margin: 3px 0;
+}
 .img {
 	height: 250px;
 	transition:transform 0.25s ease;
@@ -151,11 +176,36 @@ article {
     -webkit-transform:scale(2);
     transform:scale(2);
 }
+.infos {
+	clear: right;
+	overflow: auto;
+}
+.infos p {
+	text-align: left;
+	clear: right;
+}
+.infos .plan {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
 .one {
 	display: all;
 }
 .two {
 	display: none;
+}
+.open {
+	color: rgb(3, 197, 0);
+	font-weight: bold;
+}
+.closed {
+	color: rgb(255, 13, 0);
+	font-weight: bold;
+}
+.prix {
+	font-style: italic;
+	font-weight: bold;
 }
 /* FIN CONTENT */
 
