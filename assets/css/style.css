@@ -2,40 +2,18 @@
     font-family: Roboto Regular;
     src: url("../fonts/ROBOTO-REGULAR_0.TTF");
 }
+
 html{
 	background-color: black;
 	font-family: Roboto Regular;
 }
+
 body{
 	overflow: hidden;
 	margin : 0;
 	padding: 0;
 	width: 100%;
 	height: 100%;
-}
-
-/* PRELOADER */
-
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  z-index: 99;
-}
-
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url("../loading.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
 }
 
 /*BACKGROUND */
@@ -53,13 +31,12 @@ body{
 	height: 100%;
 
 	/*BACKGROUND=*/
-	background-image: url("../../assets/background.png");
+	background-image: url("../../assets/background.jpg");
 	/*FILTRES*/
 	-webkit-filter: blur(17px) brightness(100%) contrast(40%) saturate(130%);
 	-moz-filter: blur(17px) brightness(100%) contrast(40%) saturate(130%);
 	-o-filter: blur(17px) brightness(100%) contrast(40%) saturate(130%);
 	-ms-filter: blur(17px) brightness(100%) contrast(40%) saturate(130%);
-	
 }
 
 /* NAV BAR */
@@ -72,10 +49,12 @@ body{
 	padding-left: 50px;
 	width: 5%;
 }
+
 .logo img {
 	width: 55px;
 	height: 55px;
 }
+
 .logo img:hover {
 	transition: 500ms;
 	/*FILTRES*/
@@ -84,6 +63,7 @@ body{
 	-o-filter: hue-rotate(15deg);
 	-ms-filter: hue-rotate(15deg);
 }
+
 nav {
 	z-index: 1;
 	width: 100%;
@@ -98,6 +78,7 @@ nav {
 	vertical-align: middle;
 	color: white;
 }
+
 .name {
 	z-index: 2;
 	position: fixed;
@@ -111,18 +92,22 @@ nav {
 	color: white;
 	vertical-align: middle;
 }
+
 nav li {
 	display: inline-block;
 	margin-right: 10px;
 }
+
 nav a {
 	text-decoration: none;
 	color: white;
 	margin-right: 20px;
 }
+
 nav a:visited {
 	color: white;
 }
+
 nav a:hover {
 	transition: 270ms;
 	color: #D04629;
@@ -143,70 +128,149 @@ article {
 	width: 77.4%;
 	text-align: center;
 }
+
 p a:link {
 	color: white;
 }
+
 p a:hover {
 	color: white;
 }
+
 p a:visited {
 	color: white;
 }
+
 .biographie {
 	clear: left;
 }
+
 .biographie p {
 	text-align: left;
 }
+
 .biographie .portrait{
 	float: left;
 	margin-right: 10px; 
 }
+
 .filmographie {
 	text-align: left;
 }
+
 .filmographie li {
 	margin: 3px 0;
 }
-.img {
-	height: 250px;
-	transition:transform 0.25s ease;
+
+.wrap {
+  overflow: hidden;
+  text-align: center;
 }
-.img:hover {
-    -webkit-transform:scale(2);
-    transform:scale(2);
+
+.box {
+  float: left;
+  position: relative;
+  width: 25%;
+  padding-bottom: 25%;
+
 }
+	
+.boxInner {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+}
+	
+.boxInner img {
+	max-height: 325px; 
+	max-width: 325px;
+}
+	
+.thumbnail:hover img{
+	border: 1px solid transparent;
+}
+
+.thumbnail span{ 
+	position: absolute;
+	padding: 5px;
+	visibility: hidden;
+	color: black;
+	width: 50%;
+	top: 0;
+	left: 0;
+	margin-top: 55%;
+	margin-left: 25%;
+	text-align: center;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0);
+	border-radius: 15px;
+}
+
+.thumbnail span img{
+	height: auto;
+	padding: 2px;
+
+}
+
+.thumbnail:hover span{ 
+	z-index: 200;
+	position: fixed;
+	visibility: visible;
+	
+	background-color: rgba(0,0,0,0.7);
+}
+
+.thumbnail:hover span img{ 
+    position: relative;
+    max-width: 800px;
+    max-height: 650px;
+    z-index: 999;
+}
+
+.content-image {
+	color: white;
+	font-family: Roboto Regular;
+	font-size: 20px;
+}
+
 .infos {
 	clear: right;
 	overflow: auto;
 }
+
 .infos p {
 	text-align: left;
 	clear: right;
 }
+
 .infos .plan {
 	float: left;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
-.one {
-	display: all;
+
+.infos li {
+	text-decoration: none;
+	list-style: none;
 }
-.two {
-	display: none;
-}
+
 .open {
 	color: rgb(3, 197, 0);
 	font-weight: bold;
 }
+
 .closed {
 	color: rgb(255, 13, 0);
 	font-weight: bold;
 }
+
 .prix {
 	font-style: italic;
 	font-weight: bold;
 }
+
 /* FIN CONTENT */
 
 /* FOOTER */
@@ -221,15 +285,19 @@ p a:visited {
 	vertical-align: middle;
 	margin-top: 2px;
 }
+
 .goingTop a:link {
 	color: slategrey;
 }
+
 .goingTop a:visited {
 	color : slategrey;
 }
+
 .goingTop a:hover {
 	color: grey;
 }
+
 .goingTop .goingTopInner{
 	margin-right: 10px;
 	position: absolute;
@@ -237,6 +305,7 @@ p a:visited {
 	right: 0;
 	display: block;
 }
+
 .footer {
 	z-index: 2;
 	position: fixed;
@@ -250,9 +319,11 @@ p a:visited {
 	display: block;
 	border-top: 1px solid rgba(0,0,0,0.7);
 }
+
 .footer p {
 	text-align: center;
 }
+
 .social {
 	z-index: 3;
 	position: fixed;
@@ -263,6 +334,7 @@ p a:visited {
 	vertical-align: middle;
 	color: white;
 }
+
 .social .social_left {
 	position: absolute;
 	bottom: 0;
@@ -270,6 +342,7 @@ p a:visited {
 	display: block;
 	padding-left: 798px;
 }
+
 .social .social_right {
 	position: absolute;
 	bottom: 0;
@@ -277,17 +350,21 @@ p a:visited {
 	display: block;
 	padding-right: 810px;
 }
+
 .social {
 	color: white;
 	margin-right: 7px;
 	margin-left: 7px;
 }
+
 .social .social_left .facebook:hover {
 	transition: 500ms;
 	color: #3b5998;
 }
+
 .social .social_right .twitter:hover {
 	transition: 500ms;
 	color: #1da1f2;
 }
+
 /* FIN FOOTER */
