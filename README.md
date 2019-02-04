@@ -6,4 +6,4 @@ Projet personnalisé encadré 1 ou PPE1 est un projet que j'ai dû réaliser dur
 
 Nous devions réaliser un site web one-page pour un musée factice. Ce dernier accueillant les oeuvres de Paul Gauguin pendant 32 jours.
 
-[Démo](http://pro.nescabir.fr/dev/PPE1)
+[Démo](http://private.nescabir.fr/dev/PPE1)
